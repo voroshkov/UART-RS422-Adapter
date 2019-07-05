@@ -14,10 +14,11 @@ RJ45 pins **1, 2, 3, 6** are used as per [standard wiring](https://en.wikipedia.
 
 RS422 full-duplex modules have pins marked **A, B, Y, Z**. When connecting, make sure you choose corresponding inputs and outputs on  modules at both ends:
 ```
-A  <-->  Y
-B  <-->  Z
-Z  <-->  B
-Y  <-->  A
+--------- A  <-->  Y ---------
+Module 1  B  <-->  Z  Module 2
+          Z  <-->  B  
+--------- Y  <-->  A ---------
+
 ```
 
 Half-duplex modules have only pins marked **A, B**. Connect them as follows:
